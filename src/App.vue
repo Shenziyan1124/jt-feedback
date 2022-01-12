@@ -1,15 +1,14 @@
 <template>
   <div id="app">
     <router-view />
-    <jt-feedback></jt-feedback>
   </div>
 </template>
 
 <script>
-import { JtFeedback } from './lib/feedback/index.js';
+// import { JtFeedback } from './lib/feedback/index.js';
 export default {
   components: {
-    JtFeedback,
+    // JtFeedback,
   },
 };
 </script>
