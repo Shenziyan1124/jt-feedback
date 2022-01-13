@@ -2,6 +2,7 @@
  * axios默认参数配置文件
  */
 import axios from 'axios';
+// eslint-disable-next-line no-unused-vars
 import Vue from 'vue';
 import { notification } from 'ant-design-vue';
 
@@ -25,7 +26,7 @@ Axios.interceptors.response.use(
       return location.reload();
     }
 
-    if (!production ) {
+    if (!production) {
       let description = '系统出错，请联系相应人员';
       if (err.response && err.response.data && typeof err.response.data == 'string') {
         description = err.response.data;
@@ -97,7 +98,7 @@ export function POST(url, data, options = {}, params = {}) {
   });
 }
 
-Vue.prototype.$GET = GET;
-Vue.prototype.$POST = POST;
+// Vue.prototype.$GET = GET;
+// Vue.prototype.$POST = POST;
 
 export default { POST, GET };

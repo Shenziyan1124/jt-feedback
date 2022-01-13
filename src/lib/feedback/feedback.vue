@@ -2,7 +2,7 @@
   <div id="feedback-wrap" v-if="ifFeedbackShow">
     <div @mouseenter="optionsVisible = true" @mouseleave="optionsVisible = false">
       <div class="feedback-icon">
-        <img src="@/assets/image/home/helpIcon.png" class="helpicon" />
+        <img src="../../assets/image/home/helpIcon.png" class="helpicon" />
         <p>帮助 <b>·</b> 建议</p>
       </div>
       <ul class="option-list" v-show="optionsVisible">
@@ -41,10 +41,10 @@
 
 <script>
 import FeedbackModal from './feedbackModal.vue';
-import { checkLogin } from '@/utils/utils';
+import { checkLogin } from '../../utils/utils';
 
 export default {
-  name: 'Feedback',
+  name: 'feedback',
   components: {
     FeedbackModal,
   },

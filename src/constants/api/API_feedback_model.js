@@ -1,4 +1,4 @@
-import { GET, POST } from '@/utils/axios-default';
+import { GET, POST } from '../../utils/axios-default';
 
 // 问题反馈模块
 export default {

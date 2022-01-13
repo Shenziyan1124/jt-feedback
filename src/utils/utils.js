@@ -1,5 +1,5 @@
 // import { smsApi } from '@/apis/';
-import router from '@/router';
+// import router from '@/router';
 
 /**
  * 数字转成汉字
@@ -88,13 +88,13 @@ export function checkLogin(noRedirect) {
   return true;
 }
 
-export function checkAuth(errorCode, targetCode = '-801', redirectUrl = '/') {
-  if (`${errorCode}` === `${targetCode}`) {
-    router.replace(redirectUrl);
-    return false;
-  }
-  return true;
-}
+// export function checkAuth(errorCode, targetCode = '-801', redirectUrl = '/') {
+//   if (`${errorCode}` === `${targetCode}`) {
+//     router.replace(redirectUrl);
+//     return false;
+//   }
+//   return true;
+// }
 
 export function checkImgUrl(url, types = '.jpg,.jpeg,.gif,.png,.bmp,.JPG,.JPEG,.GIF,.PNG,.BMP') {
   const typeCollections = types.split(',').map((item) => item.slice(1));

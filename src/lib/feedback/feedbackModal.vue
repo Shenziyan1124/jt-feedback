@@ -29,8 +29,8 @@
 
 <script>
 import { Modal, FormModel, Select, Input, Button, Upload, Tooltip } from 'ant-design-vue';
-import { checkFileType } from '@/utils/utils';
-import API from '@/constants/api/API.js';
+import { checkFileType } from '../../utils/utils';
+import API from '../../constants/api/API';
 
 export default {
   name: 'FeedbackModal',
